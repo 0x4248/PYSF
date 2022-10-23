@@ -1,0 +1,9 @@
+{
+    "name":"Base32 to string",
+    "description":"Decode base32 string to string.",
+    "args":["INPUT"],
+    "defaults":[""],
+    "required":[true],
+    "types":["STR"]
+
+}

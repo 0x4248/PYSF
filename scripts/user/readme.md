@@ -1,0 +1,1 @@
+This is your scripts folder the scripts you create will go here. Use create to create one

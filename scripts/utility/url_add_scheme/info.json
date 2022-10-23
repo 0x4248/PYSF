@@ -1,0 +1,9 @@
+{
+    "name":"Add Scheme",
+    "description":"Add scheme to URL if not present.",
+    "args":["URL"],
+    "defaults":[""],
+    "required":[true],
+    "types":["STR"],
+    "_packages":""
+}

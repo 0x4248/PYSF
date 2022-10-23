@@ -1,0 +1,9 @@
+{
+    "name":"Generates Hex Numbers",
+    "description":"This script generates hex numbers and prints them to the screen use FILE argument to output hex numbers to a file.",
+    "args":["SIZE","AMOUNT","FILE","SHOW_NUM"],
+    "defaults":[8,10,"",true],
+    "required":[true,false,false,true],
+    "types":["INT","INT","STR","BOOL"]
+
+}

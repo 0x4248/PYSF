@@ -1,0 +1,9 @@
+{
+    "name":"Public IP",
+    "description":"Gets the public internet protocol address",
+    "args":[],
+    "defaults":[],
+    "required":[],
+    "types":[],
+    "packages":["requests"]
+}
