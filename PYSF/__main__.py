@@ -11,6 +11,7 @@ import platform
 import json
 import threading
 import time
+import traceback
 from colorama import Fore, Back, Style
 import importlib
 
@@ -205,11 +206,16 @@ if __name__ == "__main__":
                     elif script_return == 1:
                         verbose.error("Script ended unsuccessfully (Code 1)")
                     elif script_return.startswith("MISSINGARG"):
-                        verbose.critical(str("The var "+Fore.RED+script_return.split(":$:$:")[1]+Style.RESET_ALL+" is not set"))
+                        verbose.critical(str("The var "+Fore.RED+script_return.split(":")[1]+Style.RESET_ALL+" is not set"))
                     else:
                         verbose.info(script_return)
                     del script_module, script_return
                 except Exception as e:
+                    print("========= "+Fore.RED+"[X]"+Style.RESET_ALL+" PYSF Traceback "+Fore.RED+"[X]"+Style.RESET_ALL+" =========")
+                    print(sys.exc_info())
+                    print("==========================================")
+                    print(traceback.format_exc())
+                    print("==========================================")
                     verbose.critical(str(e))
 
 

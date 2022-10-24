@@ -1,0 +1,8 @@
+{
+    "name":"String to hex",
+    "description":"Encode string to hex. SPLIT perameter sets how many chars until a new line is created and puts = symbols at start and bottom.",
+    "args":["INPUT","SPLIT"],
+    "defaults":["",0],
+    "required":[true,false],
+    "types":["STR","INT"]
+}
