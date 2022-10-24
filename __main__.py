@@ -222,8 +222,10 @@ if __name__ == "__main__":
                     if i[0].count("\\") == 2:
                         term = " ".join(cmd[1:])
                         if i[0].replace("scripts\\","").replace("scripts/","").find(term) != -1:
+                            with open(i[0]+"/info.json", 'r') as infofile:
+                                infojson = json.load(infofile)
                             out = i[0]
-                            print(num,out)
+                            print(Fore.CYAN+str(num)+Style.RESET_ALL+"\t"+out+"\t\t"+infojson["name"])
                             last_search.append(i[0])
                             num = num + 1
             if cmdline == "create":
