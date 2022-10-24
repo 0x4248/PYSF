@@ -4,9 +4,13 @@ A project similar to Metasploit but made in python and not just exploits.
 
 PYSF means Python Script Framework
 
+
+
 # How to use PYSF
 
-Download the reposity and change dirs to where `__main__.py` is then run python __main__.py it should start up PYSF.
+Download the .whl of the latest relese and run `pip install <whl file>`
+
+Then run PYSF `python -m PYSF`
 
 It should look like this
 ```
