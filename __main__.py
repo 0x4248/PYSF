@@ -64,6 +64,8 @@ class verbose:
         print(Fore.CYAN+"[*] "+Style.RESET_ALL+message)
 if __name__ == "__main__":
     print ("Starting PYSF...", end="\r")
+    path = os.path.dirname(__file__)
+    os.chdir(path)
     time.sleep(0.2)
     sys.stdout.write("\033[K")
     print(Fore.CYAN+r"""
