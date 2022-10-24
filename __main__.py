@@ -211,7 +211,7 @@ if __name__ == "__main__":
                         print(num,i[0])
                         last_search.append(i[0])
                         num = num + 1
-
+                print(Fore.YELLOW+"[TIP]"+Style.RESET_ALL+" You run use <number> to use a script from the numbered list")
             if cmdline.startswith("search"):
                 last_search = []
                 num = 0
@@ -228,6 +228,7 @@ if __name__ == "__main__":
                             print(Fore.CYAN+str(num)+Style.RESET_ALL+"\t"+out+"\t\t"+infojson["name"])
                             last_search.append(i[0])
                             num = num + 1
+                print(Fore.YELLOW+"[TIP]"+Style.RESET_ALL+" You run use <number> to use a script from the numbered list")
             if cmdline == "create":
                 name = input("Name of script (e.g test script)>")
                 fname = input("folder name (e.g test_script)>")
