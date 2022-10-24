@@ -1,9 +1,0 @@
-{
-    "name":"Base64 to string",
-    "description":"Decode base64 string to string.",
-    "args":["INPUT"],
-    "defaults":[""],
-    "required":[true],
-    "types":["STR"]
-
-}

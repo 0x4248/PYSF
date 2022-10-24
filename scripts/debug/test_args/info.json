@@ -1,9 +1,0 @@
-{
-    "name":"Test arguments",
-    "description":"This is a script to test arguments. (Used for debugging PYSF)",
-    "args":["_1","_2","_3","_4"],
-    "defaults":["1","Hello","True",""],
-    "required":[false,false,false,true],
-    "types":["INT","STR","BOOL","STR"]
-
-}

@@ -1,0 +1,9 @@
+{
+    "name":"Number counter",
+    "description":"Test script",
+    "args":["AMOUNT","RAND"],
+    "defaults":["", false],
+    "required":[true,false],
+    "types":["INT","BOOL"]
+    
+}

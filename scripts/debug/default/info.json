@@ -1,9 +1,0 @@
-{
-    "name":"Default script",
-    "description":"This is a default script copy and paste it to make your own script. Running this script should return Hello World.",
-    "args":["ARG"],
-    "defaults":["Hello World"],
-    "required":[false],
-    "types":["STR"]
-
-}

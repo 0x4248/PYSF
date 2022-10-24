@@ -1,9 +1,0 @@
-{
-    "name":"string to base32",
-    "description":"Encode string to base32 string.",
-    "args":["INPUT"],
-    "defaults":[""],
-    "required":[true],
-    "types":["STR"]
-
-}
