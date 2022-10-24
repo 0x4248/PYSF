@@ -82,7 +82,7 @@ if __name__ == "__main__":
             continue
         if i[0].count("\\") == 2:
             num = num + 1
-    print("THere are"+Fore.GREEN,num,Style.RESET_ALL+"scripts installed")
+    print("There are"+Fore.GREEN,num,Style.RESET_ALL+"scripts installed")
     print("============================================")
     time.sleep(0.2)
     while True:
