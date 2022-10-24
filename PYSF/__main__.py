@@ -15,7 +15,7 @@ from colorama import Fore, Back, Style
 import importlib
 
 #This is used in the create function
-DEFAULT_SCRIPT = """# Python Script Framework 
+DEFAULT_SCRIPT = """# Python Script Framework (V1)
 #Put below here modules you wish to import
 
 
@@ -64,9 +64,11 @@ class verbose:
         print(Fore.CYAN+"[*] "+Style.RESET_ALL+message)
 if __name__ == "__main__":
     print ("Starting PYSF...", end="\r")
+    #This is to get the path correct 
     path = os.path.dirname(__file__)
     sys.path.append(path)
     os.chdir(path)
+    
     time.sleep(0.2)
     sys.stdout.write("\033[K")
     print(Fore.CYAN+r"""

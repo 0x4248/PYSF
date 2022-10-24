@@ -28,14 +28,16 @@ def run(ARGS):
     except TypeError:
         return "TYPE_ERR"
     ##############################################    
-    if URL.startswith("http://") == False or URL.startswith("https://") == False:
+    if URL.upper().startswith("HTTP://") == False and URL.upper().startswith("HTTPS://") == False:
         PYSF_VERBOSE.question("Does this use http or https")
         while True:
             ask = input("[HTTP/HTTPS]>")
             if ask.upper().startswith("HTTP"):
-                URL = "http://"+URL#
+                URL = "http://"+URL
+                break
             if ask.upper().startswith("HTTPS"):
                 URL = "https://"+URL
+                break
     PYSF_VERBOSE.info("Attempting to contact "+URL)
     
     try:

@@ -8,6 +8,7 @@ setuptools.setup(
     url='https://github.com/awesomelewis2007/PYSF/',
     author='awesomelewis2007',
     packages=['PYSF'],
+    include_package_data=True,
     install_requires=[''],
     version="0.1",
     license='GNU',

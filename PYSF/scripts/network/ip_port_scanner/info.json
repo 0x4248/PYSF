@@ -1,0 +1,9 @@
+{
+    "name":"IP port Scanner",
+    "description":"This script scans for ports on a target",
+    "args":["HOST"],
+    "defaults":[""],
+    "required":[true],
+    "types":["STR"]
+
+}
