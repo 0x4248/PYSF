@@ -17,13 +17,13 @@ def run(ARGS):
     #GETTING ARGS FROM PYSF
     for i in ARGS:
         if i.startswith("SIZE"):
-            SIZE = i.split(":")[1]
+            SIZE = i.split(":$:$:")[1]
         if i.startswith("AMOUNT"):
-            AMOUNT = i.split(":")[1]
+            AMOUNT = i.split(":$:$:")[1]
         if i.startswith("FILE"):
-            FILE = i.split(":")[1]    
+            FILE = i.split(":$:$:")[1]    
         if i.startswith("SHOW_NUM"):
-            SHOW_NUM = i.split(":")[1]    
+            SHOW_NUM = i.split(":$:$:")[1]    
     #FORMAT
     try:
         SIZE = int(SIZE)
@@ -33,9 +33,9 @@ def run(ARGS):
     except TypeError:
         return "TYPE_ERR"
     ##############################################
-    PYSF_VERBOSE.plus("Generating numbers")    
+    PYSF_VERBOSE.log("Generating numbers")    
     if FILE != "":
-         PYSF_VERBOSE.plus("Will write number to "+FILE)  
+         PYSF_VERBOSE.log("Will write number to "+FILE)  
     for i in range(AMOUNT):
         number = ""
         for i in range(SIZE):
@@ -46,7 +46,7 @@ def run(ARGS):
             try:
                 open(FILE,"w").write(number)
             except:
-                PYSF_VERBOSE.minus("Can't write to the file "+FILE)
+                PYSF_VERBOSE.error("Can't write to the file "+FILE)
     return 0
 if __name__ == "__main__":
     print("This script needs to be run in PYS")

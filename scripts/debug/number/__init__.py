@@ -8,9 +8,9 @@ def run(ARGS):
     #GETTING ARGS FROM PYSF
     for i in ARGS:
         if i.startswith("AMOUNT"):
-            AMOUNT = i.split(":")[1]
+            AMOUNT = i.split(":$:$:")[1]
         if i.startswith("RANDOM"):
-            AMOUNT = i.split(":")[1] 
+            AMOUNT = i.split(":$:$:")[1] 
     #CHECKING REQUIRED               
     if AMOUNT == "":
         return "MISSINGARG:AMOUNT"   

@@ -18,8 +18,8 @@ def run(ARGS):
                 output = hostup.communicate()[0]
                 val1 = hostup.returncode
                 if val1 == 0:
-                        PYSF_VERBOSE.plus(x+ " is pinging")
+                        PYSF_VERBOSE.log(x+ " is pinging")
                 else:
-                        PYSF_VERBOSE.minus(x+ " is not responding")
+                        PYSF_VERBOSE.error(x+ " is not responding")
 if __name__ == "__main__":
     print("This script needs to be run in PYS")

@@ -12,13 +12,13 @@ def run(ARGS):
     #GETTING ARGS FROM PYSF
     for i in ARGS:
         if i.startswith("_1"):
-            _1 = i.split(":")[1]
+            _1 = i.split(":$:$:")[1]
         if i.startswith("_2"):
-            _2 = i.split(":")[1]
+            _2 = i.split(":$:$:")[1]
         if i.startswith("_3"):
-            _3 = i.split(":")[1]
+            _3 = i.split(":$:$:")[1]
         if i.startswith("_4"):
-            _4 = i.split(":")[1]
+            _4 = i.split(":$:$:")[1]
     #CHECKING REQUIRED               
     if _4 == "":
         return "MISSINGARG:_4"   

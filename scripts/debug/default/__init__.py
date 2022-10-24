@@ -15,7 +15,7 @@ def run(ARGS):
     #GETTING ARGS FROM PYSF
     for i in ARGS:
         if i.startswith("ARG"):
-            ARG = i.split(":")[1]
+            ARG = i.split(":$:$:")[1]
     #CHECKING REQUIRED               
     #if ARG == "":
     #    return "MISSINGARG:ARG"   

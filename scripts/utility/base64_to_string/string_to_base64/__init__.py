@@ -15,7 +15,7 @@ def run(ARGS):
     #GETTING ARGS FROM PYSF
     for i in ARGS:
         if i.startswith("INPUT"):
-            INPUT = i.split(":")[1]
+            INPUT = i.split(":$:$:")[1]
     #CHECKING REQUIRED               
     if INPUT == "":
         return "MISSINGARG:INPUT"   
@@ -25,7 +25,7 @@ def run(ARGS):
     except TypeError:
         return "TYPE_ERR"
     ##############################################    
-    PYSF_VERBOSE.plus("Converting")
+    PYSF_VERBOSE.log("Converting")
     return base64.b64encode (INPUT.encode()).decode('utf-8')
 
 if __name__ == "__main__":

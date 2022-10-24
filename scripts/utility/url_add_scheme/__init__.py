@@ -14,7 +14,7 @@ def run(ARGS):
     #GETTING ARGS FROM PYSF
     for i in ARGS:
         if i.startswith("URL"):
-            URL = i.split(":")[1]
+            URL = i.split(":$:$:")[1]
     #CHECKING REQUIRED               
     if URL == "":
         return "MISSINGARG:URL"   

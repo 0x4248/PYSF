@@ -1,0 +1,9 @@
+{
+    "name":"Get HTML",
+    "description":"Downloads the HTML of a website.",
+    "args":["URL","FILE"],
+    "defaults":["",""],
+    "required":[true,false],
+    "types":["STR","STR"],
+    "packages":["requests"]
+}
