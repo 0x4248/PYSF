@@ -65,6 +65,7 @@ class verbose:
 if __name__ == "__main__":
     print ("Starting PYSF...", end="\r")
     path = os.path.dirname(__file__)
+    sys.path.append(path)
     os.chdir(path)
     time.sleep(0.2)
     sys.stdout.write("\033[K")

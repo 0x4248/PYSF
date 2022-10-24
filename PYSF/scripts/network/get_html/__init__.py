@@ -48,6 +48,9 @@ def run(ARGS):
     else:
         PYSF_VERBOSE.warn("HTTP "+str(r.status_code))
     PYSF_VERBOSE.log("Downloaded content")
+    if FILE != "":
+        open(FILE, "w").write(r.text)
     print(r.text)
+    return 0
 if __name__ == "__main__":
     print("This script needs to be run in PYS")
