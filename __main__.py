@@ -1,5 +1,11 @@
-# PYSF
+# PYSF Python Script Foundation
+# GNU v3
+# Owner: awesomelewis2007
+# Github: https://www.github.com/awesomelewis2007/PYSF
+# If you need help on knowing how PYSF works head over to https://www.github.com/awesomelewis2007/PYSF and read the readme.md
+
 import os
+import random
 import sys
 import platform
 import json
@@ -41,7 +47,7 @@ def run(ARGS):
 if __name__ == "__main__":
     print("This script needs to be run in PYS")"""
 
-VERSION = "0.1 ALPHA"
+VERSION = "0.1.1 ALPHA"
 
 class verbose:
     def log(message):
@@ -170,6 +176,7 @@ if __name__ == "__main__":
                 print("--------------------------")
                 for i in args:
                     print(i.replace(":$:$:","\t\t"))
+                    
             if cmdline == "clearargs":
                 verbose.question("Are you sure?")
                 confirm = input("[Y/n]")
@@ -211,7 +218,9 @@ if __name__ == "__main__":
                         print(num,i[0])
                         last_search.append(i[0])
                         num = num + 1
-                print(Fore.YELLOW+"[TIP]"+Style.RESET_ALL+" You run use <number> to use a script from the numbered list")
+                if random.randint(1,3) == 1:
+                    print(Fore.YELLOW+"[TIP]"+Style.RESET_ALL+" You run use <number> to use a script from the numbered list")
+
             if cmdline.startswith("search"):
                 last_search = []
                 num = 0
@@ -228,7 +237,9 @@ if __name__ == "__main__":
                             print(Fore.CYAN+str(num)+Style.RESET_ALL+"\t"+out+"\t\t"+infojson["name"])
                             last_search.append(i[0])
                             num = num + 1
-                print(Fore.YELLOW+"[TIP]"+Style.RESET_ALL+" You run use <number> to use a script from the numbered list")
+                if random.randint(1,3) == 1:
+                    print(Fore.YELLOW+"[TIP]"+Style.RESET_ALL+" You run use <number> to use a script from the numbered list")
+            
             if cmdline == "create":
                 name = input("Name of script (e.g test script)>")
                 fname = input("folder name (e.g test_script)>")
@@ -266,10 +277,13 @@ if __name__ == "__main__":
                 script = "scripts/user/"+fname
                 open("./scripts/user/"+fname+'/PYSFSCRIPT', 'w').write("This file is fo that PYSF can find this script. Don't remove it")
                 open("./scripts/user/"+fname+'/__init__.py', 'w').write(DEFAULT_SCRIPT)
+            
             if cmdline == "help":
                 print(open("./help","r").read())
+            
             if cmdline == "version":
                 print(VERSION)
+            
             if cmdline.startswith("exit") or cmdline.startswith("quit") or cmdline == "e" or cmdline == "q":
                 exit()
         except KeyboardInterrupt:
