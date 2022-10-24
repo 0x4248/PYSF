@@ -1,0 +1,9 @@
+{
+    "name":"Local IP Scanner",
+    "description":"This script scans the local network for IP address's.",
+    "args":[],
+    "defaults":[],
+    "required":[],
+    "types":[]
+
+}
