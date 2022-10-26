@@ -12,6 +12,9 @@ Download the .whl of the latest relese and run `pip install <whl file>`
 
 Then run PYSF `python -m PYSF`
 
+**NOTE**: If PYSF says there are no scripts installed then that's my fault....... Open a issue stating what version is affected and i will fix the issue. You caqn manualy fix the issue my downlading the scripts folder and placing it into `site-packaes/PYSF` with the `__init__.py` `__main__.py` 
+
+
 It should look like this
 ```
 
