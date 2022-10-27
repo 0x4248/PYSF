@@ -230,7 +230,7 @@ if __name__ == "__main__":
                         last_search.append(i[0])
                         num = num + 1
                 if random.randint(1,3) == 1:
-                    print(Fore.YELLOW+"[TIP]"+Style.RESET_ALL+" You run use <number> to use a script from the numbered list")
+                    print(Fore.YELLOW+"[TIP]"+Style.RESET_ALL+" You can run use <number> to use a script from the numbered list")
 
             if cmdline.startswith("search"):
                 last_search = []
@@ -249,7 +249,7 @@ if __name__ == "__main__":
                             last_search.append(i[0])
                             num = num + 1
                 if random.randint(1,3) == 1:
-                    print(Fore.YELLOW+"[TIP]"+Style.RESET_ALL+" You run use <number> to use a script from the numbered list")
+                    print(Fore.YELLOW+"[TIP]"+Style.RESET_ALL+" You can run use <number> to use a script from the numbered list")
             
             if cmdline == "create":
                 name = input("Name of script (e.g test script)>")
