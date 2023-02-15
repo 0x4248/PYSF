@@ -1,0 +1,9 @@
+{
+    "name":"Image grayscale",
+    "description":"Opens an image using pillow and converts the image to grayscale",
+    "args":["FILE","OUTPUT_FILE"],
+    "defaults":["",""],
+    "required":[true,true],
+    "types":["STR","STR"]
+
+}

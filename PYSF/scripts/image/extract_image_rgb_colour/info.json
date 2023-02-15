@@ -1,0 +1,9 @@
+{
+    "name":"Extract image RGB colour",
+    "description":"Opens an image using pillow and places a red green and blue split image in colour in the same location",
+    "args":["FILE"],
+    "defaults":[""],
+    "required":[true],
+    "types":["STR"]
+
+}

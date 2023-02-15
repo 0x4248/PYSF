@@ -1,0 +1,9 @@
+{
+    "name":"Get image format",
+    "description":"Opens an image using pillow and returns the format",
+    "args":["FILE"],
+    "defaults":[""],
+    "required":[true],
+    "types":["STR"]
+
+}

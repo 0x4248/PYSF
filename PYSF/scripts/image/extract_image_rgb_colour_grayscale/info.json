@@ -1,0 +1,9 @@
+{
+    "name":"Extract image RGB colour grayscale",
+    "description":"Opens an image using pillow and places a red green and blue split image in grayscale in the same location",
+    "args":["FILE"],
+    "defaults":[""],
+    "required":[true],
+    "types":["STR"]
+
+}

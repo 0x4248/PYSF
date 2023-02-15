@@ -1,0 +1,9 @@
+{
+    "name":"Get image resolution",
+    "description":"Opens an image using pillow and returns the resolution",
+    "args":["FILE"],
+    "defaults":[""],
+    "required":[true],
+    "types":["STR"]
+
+}
