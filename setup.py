@@ -9,6 +9,7 @@ setuptools.setup(
     author='awesomelewis2007',
     packages=['PYSF'],
     include_package_data=True,
+    include_dirs=['PYSF', "scripts"],
     install_requires=[''],
     version="0.1",
     license='GNU',

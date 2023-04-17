@@ -90,11 +90,18 @@ if __name__ == "__main__":
     args = []
     num = 0
     last_search = []
-    for i in os.walk("scripts\\"):
-        if i[0].endswith("__pycache__"):
-            continue
-        if i[0].count("\\") == 2:
-            num = num + 1
+    if platform.system() == "Linux":
+        for i in os.walk("scripts/"):
+            if i[0].endswith("__pycache__"):
+                continue
+            if i[0].count("/") == 2:
+                num = num + 1
+    else:
+        for i in os.walk("scripts\\"):
+            if i[0].endswith("__pycache__"):
+                continue
+            if i[0].count("\\") == 2:
+                num = num + 1
     print("There are"+Fore.GREEN,num,Style.RESET_ALL+"scripts installed")
     print("============================================")
     time.sleep(0.2)
