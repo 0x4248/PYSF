@@ -1,5 +1,8 @@
 # PYSF
 
+**THIS PROJECT IS NO LONGER BEING WORKED ON:**
+Please see Neo PYSF for the new version of PYSF [here](https://www.github.com/lewisevans2007/Neo_PYSF)
+
 A project similar to Metasploit but made in python and not just exploits.
 
 PYSF means Python Script Framework
