@@ -1,8 +1,8 @@
 # PYSF Python Script Foundation
 # GNU v3
 # Owner: awesomelewis2007
-# Github: https://www.github.com/lewisevans2007/PYSF
-# If you need help on knowing how PYSF works head over to https://www.github.com/lewisevans2007/PYSF and read the readme.md
+# Github: https://www.github.com/0x4248/PYSF
+# If you need help on knowing how PYSF works head over to https://www.github.com/0x4248/PYSF and read the readme.md
 
 import os
 import random
